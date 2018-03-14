@@ -54,7 +54,7 @@ namespace FlappyPixel
                 _windowWidth = Console.WindowWidth;
                 _windowHeight = Console.WindowHeight;
 
-                _timer = new System.Timers.Timer(250);
+                _timer = new System.Timers.Timer(300);
                 _timer.Elapsed += (sender, e) => MoveTubes();
                 _timer.Elapsed += (sender, e) => DropPixel();
                 _timer.Start();
